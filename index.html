@@ -2637,7 +2637,7 @@ function pularOcorrenciaEFinalizar() {
     } else {
         // MODO 100% LIMPO: Altera o estado visual do botão principal se ele existir
         const btn = document.querySelector("button[onclick='finalizarLote()']");
-        if (btn) btn.innerText = "💾 Gravando Master...";
+        if (btn) btn.innerText = "💾 Finalizando...";
 
         console.log("🚀 [PURGE DEFINITIVO] Iniciando transferência e expurgo da carga: " + romaneioVal);
         const urlPurge = `${urlSheets}?action=executarPurgeFinal&romaneio=${encodeURIComponent(romaneioVal)}`;
